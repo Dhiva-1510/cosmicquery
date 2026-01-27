@@ -17,6 +17,11 @@ cosmicquery/
 ├── README.md          # Project documentation
 └── venv/              # Virtual environment (created during setup)
 ```
+## 📸 Project Workflow
+
+<p align="center">
+  <img src="images/flow.png" width="400"/>
+</p>
 
 
 ## ✨ Features
