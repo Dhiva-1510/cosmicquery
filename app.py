@@ -1,11 +1,9 @@
 import json
 import streamlit as st
 from dotenv import load_dotenv
-
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
-
 from schemas import ResearchResponse
 from tools import search_tool, wiki_tool, save_tool
 
@@ -109,7 +107,7 @@ with st.container():
 
 
 if run and query:
-    with st.spinner("Exploring the universe of knowledge… 🌌"):
+    with st.spinner("Exploring the universe of knowledge… "):
         wiki_context = wiki_tool.run(query)
         search_context = search_tool.run(query)
 
