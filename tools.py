@@ -15,8 +15,8 @@ def search_tool(query: str) -> str:
 
 # ---------- Wikipedia ----------
 wiki_api = WikipediaAPIWrapper(
-    top_k_results=3,
-    doc_content_chars_max=4000
+    top_k_results=7,
+    doc_content_chars_max=12000
 )
 
 wiki_tool = WikipediaQueryRun(api_wrapper=wiki_api)
