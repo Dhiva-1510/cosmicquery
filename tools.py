@@ -4,7 +4,6 @@ from langchain_community.utilities.wikipedia import WikipediaAPIWrapper
 from langchain_core.tools import tool
 
 
-# ---------- Web Search ----------
 search = DuckDuckGoSearchRun()
 
 @tool
@@ -13,7 +12,6 @@ def search_tool(query: str) -> str:
     return search.run(query)
 
 
-# ---------- Wikipedia ----------
 wiki_api = WikipediaAPIWrapper(
     top_k_results=7,
     doc_content_chars_max=12000
@@ -22,7 +20,6 @@ wiki_api = WikipediaAPIWrapper(
 wiki_tool = WikipediaQueryRun(api_wrapper=wiki_api)
 
 
-# ---------- Save ----------
 @tool
 def save_tool(content: str) -> str:
     """Save research content to a file."""

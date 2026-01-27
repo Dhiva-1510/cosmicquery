@@ -78,5 +78,5 @@ if __name__ == "__main__":
             save_tool.invoke(json.dumps(parsed.model_dump(), indent=4))
 
     except Exception as e:
-        print("\n❌ Parsing failed")
+        print("\n Parsing failed")
         print(e)
